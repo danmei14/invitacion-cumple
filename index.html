@@ -2,65 +2,119 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Invitación de Cumpleaños</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Cumpleaños</title>
 
 <style>
 
 body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#ffd6e7,#ffeef5);
-    text-align:center;
-    padding:40px;
+    margin:0;
+    font-family: 'Georgia', serif;
+    background:#e9e2d6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
-.contenedor{
-    background:white;
-    max-width:500px;
-    margin:auto;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0px 10px 25px rgba(0,0,0,0.1);
+.card{
+    background:#f4eee4;
+    width:90%;
+    max-width:420px;
+    padding:35px 25px;
+    border:3px solid black;
+    text-align:center;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 h1{
-    color:#ff4da6;
-    font-size:36px;
+    font-size:42px;
+    margin:10px 0;
+    font-style:italic;
 }
 
-.nombre{
-    font-size:28px;
-    color:#444;
-    margin-bottom:10px;
-}
-
-.texto{
-    font-size:18px;
-    color:#555;
-    margin:15px 0;
+.subtitle{
+    font-size:24px;
+    color:gray;
+    letter-spacing:4px;
 }
 
 .info{
-    font-size:18px;
-    margin:10px 0;
+    margin-top:20px;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.fecha{
+    margin-top:20px;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.xoxo{
+    font-size:50px;
+    color:#c40000;
+    margin-top:25px;
+    font-family:cursive;
 }
 
 .boton{
+    margin-top:15px;
     display:inline-block;
-    margin:15px;
-    padding:12px 25px;
-    border-radius:12px;
+    padding:12px 22px;
+    background:black;
+    color:white;
     text-decoration:none;
-    font-weight:bold;
+    border-radius:10px;
+    font-size:15px;
+    transition:0.3s;
 }
 
-.lugar{
-    background:#ff4da6;
-    color:white;
+.boton:hover{
+    background:#444;
 }
 
-.wpp{
-    background:#25D366;
-    color:white;
+.decoracion{
+    position:absolute;
+    font-size:32px;
+}
+
+.globo{
+    top:-15px;
+    right:-5px;
+}
+
+.estrella{
+    left:-5px;
+    top:15px;
+}
+
+.labios{
+    right:10px;
+    top:130px;
+}
+
+/* RESPONSIVE PARA CELULAR */
+
+@media (max-width:480px){
+
+h1{
+    font-size:34px;
+}
+
+.subtitle{
+    font-size:20px;
+}
+
+.info{
+    font-size:15px;
+}
+
+.boton{
+    width:90%;
+}
+
 }
 
 </style>
@@ -68,37 +122,40 @@ h1{
 
 <body>
 
-<div class="contenedor">
+<div class="card">
 
-<h1>🎉 ¡Estás Invitado! 🎉</h1>
+<div class="decoracion globo">🎈</div>
+<div class="decoracion estrella">⭐</div>
+<div class="decoracion labios">💋</div>
 
-<p class="texto">
-Hay momentos que se vuelven más especiales cuando se comparten con personas importantes.
-</p>
+<h1>Daniela</h1>
+<div class="subtitle">BIRTHDAY</div>
 
-<p class="texto">
-Me encantaría que fueras parte de la celebración de mi cumpleaños 🎂
-</p>
+<div class="info">
+Te invito a pasar conmigo haciendo lo que más me gusta,<br>
+comer y compartir 🎉
+</div>
 
-<div class="nombre">✨ Daniela ✨</div>
+<div class="fecha">
+📅 18 de Marzo <br>
+⏰ 7:00 PM
+</div>
 
-<p class="info">📅 <b>Fecha:</b> 18 de Marzo</p>
-<p class="info">⏰ <b>Hora:</b> 7:00 PM</p>
-<p class="info">📍 <b>Lugar:</b> Dessert Brownies</p>
+<div class="info">
+📍 Dessert Brownies
+</div>
 
-<a class="boton lugar" href="https://www.instagram.com/dessertbrownies/" target="_blank">
+<a class="boton" href="https://www.instagram.com/dessertbrownies/" target="_blank">
 Ver lugar 📍
 </a>
 
 <br>
 
-<p class="texto">
-Tu presencia hará este día aún más especial 💕
-</p>
-
-<a class="boton wpp" href="https://wa.me/573157047216" target="_blank">
-Confirmar asistencia por WhatsApp
+<a class="boton" href="https://wa.me/573157047216" target="_blank">
+Confirmar asistencia 💬
 </a>
+
+<div class="xoxo">XOXO</div>
 
 </div>
 
