@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Invitación Cumpleaños</title>
@@ -21,88 +20,80 @@ body{
     margin:0;
 }
 
-.invitation{
+/* CONTENEDOR CON IMAGEN */
+
+.contenedor{
+    position:relative;
     width:90%;
     max-width:600px;
-    background:#f7f3ed;
-    border:4px solid #b33a4a;
-    padding:40px 25px;
+}
+
+.contenedor img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* CONTENIDO SOBRE LA IMAGEN */
+
+.contenido{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
     color:#7b1e2b;
-    box-shadow:0 0 20px rgba(0,0,0,0.1);
-    position:relative;
+    padding:20px;
 }
 
-/* IMÁGENES LADOS */
-
-.artista{
-    position:absolute;
-    top:20px;
-    right:20px;
-}
-
-.hola{
-    position:absolute;
-    top:20px;
-    left:20px;
-}
-
-.artista-img,
-.hola-img{
-    width:120px;
-}
-
-/* TEXTO */
+/* TEXTOS */
 
 .small-text{
     letter-spacing:3px;
-    font-size:10px;
+    font-size:18px;
 }
 
 .title{
     font-family:'Great Vibes', cursive;
-    font-size:80px;
+    font-size:70px;
     margin:10px 0;
 }
-
-.subtitle{
-    font-size:32px;
-    letter-spacing:3px;
-}
-
-
 
 .celebrate{
     margin-top:10px;
-    font-size:28px;
-}
-
-.name{
-    font-size:40px;
-    font-weight:bold;
-    margin:10px 0;
+    font-size:24px;
 }
 
 .date{
-    margin:20px 0;
-    font-size:20px;
+    margin:15px 0;
+    font-size:18px;
 }
 
 .location{
-    font-size:18px;
-    line-height:1.6;
+    font-size:16px;
     margin-top:10px;
 }
 
+.location a{
+    color:#7b1e2b;
+    font-weight:bold;
+}
+
+/* BOTÓN */
+
 .button{
     display:inline-block;
-    margin-top:25px;
-    padding:15px 25px;
+    margin-top:20px;
+    padding:14px 22px;
     background:#7b1e2b;
     color:white;
     text-decoration:none;
     border-radius:8px;
-    font-size:18px;
+    font-size:16px;
     transition:0.3s;
 }
 
@@ -110,30 +101,20 @@ body{
     background:#a22a3a;
 }
 
-.pandemia img{
-    width:120px;
-    margin-top:10px;
-}
-
 /* RESPONSIVE */
 
 @media (max-width:480px){
 
 .title{
-    font-size:65px;
+    font-size:50px;
 }
 
-.subtitle{
-    font-size:26px;
+.small-text{
+    font-size:14px;
 }
 
-.name{
-    font-size:32px;
-}
-
-.artista-img,
-.hola-img{
-    width:80px;
+.celebrate{
+    font-size:20px;
 }
 
 }
@@ -143,42 +124,28 @@ body{
 
 <body>
 
-<div class="invitation">
+<div class="contenedor">
 
-<!-- decoraciones -->
+<!-- IMAGEN DE LA INVITACIÓN -->
+<img src="cumpleaños.png" alt="Invitación">
 
+<!-- TEXTO SOBRE LA IMAGEN -->
+<div class="contenido">
 
-<div class="small-text">ESTÁS INVITADO A MI</div> 
-<tr></tr>
-<tr></tr>
-<div class="title">Birthday party</div>
+<div class="small-text">ESTÁS INVITADO A MI</div>
 
+<div class="title">Birthday Party</div>
 
+<div class="celebrate">Para celebrar mis</div>
 
-
-
-
-
-<div class="celebrate">PARA CELEBRAR MIS</div>
-
-<div class="pandemia">
-<img src="descarga.png">
-</div>
-    <div class="artista">
-<img src="happu.png" alt="Dani" class="artista-img">
-</div>
-
-<div class="hola">
-<img src="happu.png" alt="Dani" class="hola-img">
-</div>
 <div class="date">
 Domingo 7:00 PM | <b>22</b> | marzo 2026
 </div>
 
 <div class="location">
 📍 Lugar de la cena:<br>
-<a href="" target="_blank">
-No se sabe todavia
+<a href="https://www.instagram.com/dessertbrownies/" target="_blank">
+Dessert Brownies
 </a>
 </div>
 
@@ -190,8 +157,7 @@ Confirmar asistencia
 
 </div>
 
+</div>
+
 </body>
 </html>
-
-
-
