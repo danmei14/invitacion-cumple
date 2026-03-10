@@ -20,34 +20,32 @@ body{
     margin:0;
 }
 
-/* CONTENEDOR CON IMAGEN */
+/* CONTENEDOR */
 
 .contenedor{
     position:relative;
     width:90%;
-    max-width:600px;
+    max-width:550px;
 }
+
+/* IMAGEN BASE */
 
 .contenedor img{
     width:100%;
     border-radius:10px;
+    display:block;
 }
 
-/* CONTENIDO SOBRE LA IMAGEN */
+/* TEXTO SOBRE LA IMAGEN */
 
 .contenido{
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    top:38%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:85%;
     text-align:center;
     color:#7b1e2b;
-    padding:20px;
 }
 
 /* TEXTOS */
@@ -59,50 +57,47 @@ body{
 
 .title{
     font-family:'Great Vibes', cursive;
-    font-size:70px;
-    margin:10px 0;
+    font-size:60px;
+    margin:5px 0;
 }
 
 .celebrate{
-    margin-top:10px;
-    font-size:32px;
+    font-size:28px;
     font-weight:bold;
 }
 
 .date{
-    margin:15px 0;
-    font-size:18px;
+    margin-top:10px;
+    font-size:16px;
 }
 
 .location{
-    font-size:16px;
     margin-top:10px;
+    font-size:15px;
 }
 
 .location a{
     color:#7b1e2b;
     font-weight:bold;
+    text-decoration:none;
 }
 
-/* IMAGEN DECORATIVA ARRIBA */
+/* IMAGEN DEL 20 */
 
-.pandemia{
-    display:flex;
-    justify-content:center;
-    margin-bottom:25px; /* espacio debajo de la imagen */
-    margin-top:-20px; /* opcional, para ajustarla más arriba */
+.numero{
+    margin:10px 0;
 }
 
-.pandemia img{
-    width:250px; /* tamaño grande */
+.numero img{
+    width:120px;
 }
 
 /* BOTÓN */
 
 .button{
     display:inline-block;
-    margin-top:20px;
-    padding:14px 22px;
+    margin-top:15px;
+    padding:14px 24px;
     background:#7b1e2b;
     color:white;
     text-decoration:none;
@@ -119,20 +114,28 @@ body{
 
 @media (max-width:480px){
 
-.title{
-    font-size:50px;
+.small-text{
+    font-size:16px;
 }
 
-.small-text{
-    font-size:20px;
+.title{
+    font-size:48px;
 }
 
 .celebrate{
-    font-size:26px;
+    font-size:22px;
 }
 
-.pandemia img{
-    width:150px;
+.numero img{
+    width:90px;
+}
+
+.date{
+    font-size:14px;
+}
+
+.location{
+    font-size:14px;
 }
 
 }
@@ -144,31 +147,31 @@ body{
 
 <div class="contenedor">
 
-<!-- IMAGEN DE LA INVITACIÓN -->
 <img src="cumpleaños.png" alt="Invitación">
 
-<!-- TEXTO SOBRE LA IMAGEN -->
 <div class="contenido">
 
-<!-- Imagen grande arriba -->
-
-<br><br><br><br><br><br><br><br><br><br><br>
 <div class="small-text">ESTÁS INVITADO A MI</div>
-<div class="title">Birthday </div>
+
+<div class="title">Birthday</div>
+
 <div class="celebrate">Para celebrar mis</div>
-<div class="pandemia">
-<img src="descarga.png" alt="decoración">
+
+<div class="numero">
+<img src="descarga.png" alt="20 años">
 </div>
+
 <div class="date">
 Domingo 7:00 PM | <b>22</b> | marzo 2026
 </div>
 
 <div class="location">
 📍 Lugar de la cena:<br>
-<a href="https://www.instagram.com/dessertbrownies/" target="_blank">
+<a href="https://www.instagram.com/ebano_col?igsh=MW42ZXZzaTdkdzRhMQ==" target="_blank">
 Dessert Brownies
 </a>
 </div>
+
 <a class="button"
 href="https://wa.me/573157047216?text=Hola%20quiero%20confirmar%20mi%20asistencia%20al%20cumpleaños"
 target="_blank">
