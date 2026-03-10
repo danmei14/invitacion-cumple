@@ -84,7 +84,7 @@ body{
 .numero{
     margin:10px 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* centra la imagen */
 }
 
 .numero img{
@@ -100,7 +100,7 @@ body{
     color:white;
     text-decoration:none;
     border-radius:8px;
-    font-size:14px;
+    font-size:16px;
     transition:0.3s;
 }
 
@@ -108,32 +108,37 @@ body{
     background:#a22a3a;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE PARA CELULAR */
 @media (max-width:480px){
 
-.small-text{
-    font-size:16px;
-}
+    .small-text{
+        font-size:14px; /* letra más pequeña */
+    }
 
-.title{
-    font-size:48px;
-}
+    .title{
+        font-size:36px; /* reduce tamaño */
+    }
 
-.celebrate{
-    font-size:22px;
-}
+    .celebrate{
+        font-size:18px; /* reduce tamaño */
+    }
 
-.numero img{
-    width:200px; /* más pequeño en móviles */
-}
+    .numero img{
+        width:80px; /* más pequeño */
+    }
 
-.date{
-    font-size:14px;
-}
+    .date{
+        font-size:12px; /* reduce tamaño */
+    }
 
-.location{
-    font-size:14px;
-}
+    .location{
+        font-size:12px; /* reduce tamaño */
+    }
+
+    .button{
+        padding:10px 20px; /* botón más pequeño */
+        font-size:14px;    /* texto más pequeño */
+    }
 
 }
 
@@ -147,7 +152,7 @@ body{
 <img src="cumpleaños.png" alt="Invitación">
 
 <div class="contenido">
-<br><br><br><br>
+
 <div class="small-text">ESTÁS INVITADO A MI</div>
 
 <div class="title">Birthday</div>
